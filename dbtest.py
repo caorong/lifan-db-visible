@@ -28,11 +28,11 @@ this.width=x.width+10;this.height=x.height+10;"></iframe>
 
 """
 
-def get_title(title):
+def get_title(title, year=""):
     return u"""
 
 <br>
-<h3>"""+title+"""</h3>
+<h3>""" + year + """ - """ + title + """</h3>
 
 """
 
@@ -47,7 +47,7 @@ PAGE_SIZE = 20
 def get_page_link():
     pbtn = ""
     for i in range(0,len(db)/PAGE_SIZE+1):
-        pbtn += """<a href="./"""+str(i)+"""">"""+str(i)+"""</a>&nbsp;"""
+        pbtn += """<a href="/p/"""+str(i)+"""">"""+str(i)+"""</a>&nbsp;"""
     return pbtn
 
 def get_page(pno, psize = PAGE_SIZE):
@@ -56,9 +56,16 @@ def get_page(pno, psize = PAGE_SIZE):
     for i in [j for j in range(pno * psize, (pno + 1) * psize) if j < len(db)]:
         # page += str(i) + ' '
         # print db[i].get('image')  #magnet
+        year = db[i].get('year')
+        # if( type(year) == int ):
+        year = str(year) if type(year)==int else year
+        # print year
         name = db[i].get('name')
         if name is not None:
-            page += get_title(name)
+            if year is not None:
+                page += get_title(name, year)
+            else:
+                page += get_title(name)
         pic = db[i].get('image')
         if pic is not None:
             page += get_crack_pic_code(pic) 
