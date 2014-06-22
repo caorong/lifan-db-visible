@@ -3,7 +3,7 @@
 from bottle import route, run, template,debug
 import dbtest
 
-db=[]
+# db=[]
 
 @route('/')
 @route('/p/<i>')
@@ -16,6 +16,6 @@ def index(i=0):
     # return "123"
 
 
-db = dbtest.readfile()
+# db = dbtest.readfile()
 debug(True)
 run(host='0.0.0.0', port=8080, reloader=True)
