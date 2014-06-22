@@ -16,6 +16,6 @@ def index(i=0):
     # return "123"
 
 
-# db = dbtest.readfile()
+dbtest.readfile()
 debug(True)
 run(host='0.0.0.0', port=8080, reloader=True)
