@@ -17,5 +17,6 @@ def index(i=0):
 
 
 dbtest.readfile()
-debug(True)
-run(host='0.0.0.0', port=8080, reloader=True)
+# debug(True)
+# run(host='0.0.0.0', port=8080, reloader=True)
+run(host='0.0.0.0', port=8080)
