@@ -15,8 +15,12 @@ def index(i=0):
     return dbtest.get_page(int(i))
     # return "123"
 
+@route('/test')
+def test():
+    # print template('lan')
+    return template('lan')
 
 dbtest.readfile()
 # debug(True)
-# run(host='0.0.0.0', port=8080, reloader=True)
-run(host='0.0.0.0', port=8080)
+run(host='0.0.0.0', port=8080, reloader=True)
+# run(host='0.0.0.0', port=8080)

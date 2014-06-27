@@ -18,3 +18,27 @@ var im_89f86e1e281846ce26b868321de741 = "<img style='max-height:500px;width:auto
 scrolling="no" frameborder="0" src="javascript:parent.im_89f86e1e281846ce26b868321de741;"
 onload="javascript:var x=document.getElementById('im_89f86e1e281846ce26b868321de741').contentWindow.document.images[0];
 this.width=x.width+10;this.height=x.height+10;"></iframe>
+
+
+
+
+<iframe name="iframe" id="iframe" src="http://magnet2torrent.com/upload/" width="0" height="0"></iframe>
+
+<div style="clear: both;">
+
+<div style="float: left">
+<form action="http://magnet2torrent.com/upload/" method="post" target="iframe">
+<input type="hidden" name="magnet" value="magnet:?xt=urn:btih:6680E22F3711CA02D561841F63D2EDFAC0F7B10D" />
+<input type="submit" value="submit"/>
+</form>
+
+</div>
+<div style="float: left">
+<form action="http://magnet2torrent.com/upload/" method="post" target="iframe">
+<input type="hidden" name="magnet" value="magnet:?xt=urn:btih:6680E22F3711CA02D561841F63D2EDFAC0F7B10D" />
+<input type="submit" value="submit"/>
+</form>
+</div>
+
+</div>
+
